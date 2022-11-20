@@ -6,6 +6,7 @@ import { MainModuleComponent } from './main-module.component';
 import { HeaderComponent } from './main-components/header/header.component';
 import { FooterComponent } from './main-components/footer/footer.component';
 import { CreateProductsComponent } from './main-components/create-products/create-products.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { CreateProductsComponent } from './main-components/create-products/creat
   ],
   imports: [
     CommonModule,
-    MainModuleRoutingModule
+    MainModuleRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class MainModuleModule { }
